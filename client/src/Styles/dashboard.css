@@ -1,0 +1,160 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    animation: fadeIn 0.3s ease-in;
+}
+.circle-1 {
+    width: 100dvh;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #50c3c97e;
+    padding: 20%;
+    border-radius: 0px 30% 30% 0px;
+    animation: fadeRight 0.3s ease-in;
+}
+.welcome img {
+    width: 80%;
+}
+.welcome h1 {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 3px gray;
+}
+.welcome p {
+    font-size: 0.75rem;
+    color: #2f2e41;
+}
+.welcome button, .add-task button {
+    color: white;
+    background-color: #2f2e41;
+    outline: 0;
+    border: 1px solid #2f2e41;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+}
+.welcome button:hover , .add-task button:hover{
+    color: #2f2e41;
+    background-color: transparent;
+}
+.tasks {
+    padding: 5%;
+}
+.tasks span {
+    color: #25b0b8;
+}
+.upcoming, .completed {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 26dvh;
+}
+.upcoming > div, .completed > div {
+    display: flex;
+    flex-direction: column;
+    background-color: #25b1b833;
+    border-radius: 8px;
+    padding: 0.5% 1%;
+    margin: 0.5%;
+    animation: fadeDown 0.3s ease-in;
+}
+
+.task-title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.task-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2f2e41;
+}
+.task-title-btn button {
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.task-desc {
+    word-wrap: break-word;
+    font-size: 0.75rem;
+}
+
+.upcoming::-webkit-scrollbar, .completed::-webkit-scrollbar {
+    display: none;
+}
+
+.add-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20%;
+    background-color: #50c3c97e;
+    border-radius: 30% 0px 0px 30%;
+    color: #2f2e41;
+    animation: fadeLeft 0.3s ease-in;
+}
+
+.add-task input[type="text"], .add-task textarea {
+    width: 100%;
+    outline: 0;
+    border: 0px;
+    border-radius: 8px;
+    margin: 2%;
+    padding: 0.5rem 1rem;
+    text-align: start;
+    background-color: #F0F4F3;
+}
+
+.add-task textarea {
+    height: 10rem;
+    resize: none;
+}
+.add-task textarea::-webkit-scrollbar { 
+    display: none;
+}
+
+@keyframes delete {
+    0% {
+        height: auto;
+        opacity: 1; 
+    }
+    25% {
+        height: calc(auto/1.33);
+        opacity: 0.75;
+    }
+    50% {
+        height: calc(auto/2);
+        opacity: 0.5;
+    }
+    50% {
+        height: calc(auto/4);
+        opacity: 0.25;
+    }
+    100% {
+        height: 0px;
+        opacity: 0;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .welcome{
+        border-radius: 0px 0px 30% 30%;
+        animation: fadeDown 0.3s ease-in;
+    }
+    .add-task {
+        border-radius: 30% 30% 0px 0px;
+        animation: fadeUp 0.3s ease-in;
+    }
+    .circle-1 {
+        width: 50dvw;
+    }
+    .dashboard {
+        grid-template-columns: auto;
+    }
+}

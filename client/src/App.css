@@ -1,0 +1,32 @@
+.circle-1, .circle-2 {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(143, 225, 215, 0.50);
+  width: 50lvh;
+  height: 50lvh;
+  z-index: -1;
+}
+
+.circle-1 {
+  top: -25lvh;
+  left: -10lvh;
+}
+.circle-2 {
+  top: -10lvh;
+  left: -25lvh;
+}
+
+@media screen and (max-width: 678px) {
+  .circle-1, .circle-2 {
+    width: 50dvw;
+    height: 50dvw;
+  }
+  .circle-1 {
+    top: -25dvw;
+    left: -10dvw;
+  }
+  .circle-2 {
+    top: -10dvw;
+    left: -25dvw;
+  }
+}

@@ -1,0 +1,87 @@
+.splashscreen {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.splashscreen img {
+    width: 25dvw;
+}
+.splashscreen h1 {
+    font-size: 1.5rem;
+    color: #2F2E41;
+}
+
+.splashscreen p {
+    font-size: 0.75rem;
+    padding: 0px 20%;
+    text-align: center;
+    color: #2F2E41;
+}
+
+.splashscreen a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: #50C2C9;
+}
+
+.splashscreen button {
+    color: white;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    background-color: #50C2C9;
+    outline: 0;
+    border: 0px;
+    border-radius: 10px;
+    font-weight: 500;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.splashscreen button:hover {
+    background-color: #2f2e41;
+    box-shadow: 0px 0px 5px #2f2e41;
+}
+
+.otp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.otp input[type="text"] {
+    margin: 0rem 0.2rem;
+    width: 1rem;
+    text-align: center;
+}
+
+.splashscreen input {
+    width: 30%;
+    margin: 5px 0px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid #2F2E41;
+    color: #2F2E41;
+    animation: fadeUp 0.4s ease-in;
+}
+.splashscreen input:focus {
+    border-color: #50C2C9;
+}
+.splashscreen span {
+    color: red;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .splashscreen img {
+        width: 25dvh;
+    }
+    .splashscreen input {
+        width: 80%;
+    }
+}
