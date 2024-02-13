@@ -52,6 +52,10 @@ To run the app locally, you need to have Node.js, npm and MongoDB installed on y
 
 To use the app, you need to sign up with an email and a password. Then you can log in with your credentials and start creating tasks. You can edit or delete a task by clicking on the corresponding buttons. You can also mark a task as done by checking the checkbox. To log out, click on the logout button on the navbar.
 
+
+https://github.com/sil-samriddha/authenticated-todo-app/assets/95685662/39b8af0c-5ca4-49fa-8b3f-de27a5b8875d
+
+
 ## ✨License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
